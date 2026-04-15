@@ -59,7 +59,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      increment_roast_count: { Args: never; Returns: number }
     }
     Enums: {
       [_ in never]: never

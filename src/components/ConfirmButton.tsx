@@ -11,10 +11,15 @@ export default function ConfirmButton({ initialCount }: ConfirmButtonProps) {
   const [confirmed, setConfirmed] = useState(false)
 
   async function handleConfirm() {
-    const res = await fetch('/api/confirm', { method: 'POST' })
-    const data = await res.json()
-    setCount(data.count)
-    setConfirmed(true)
+    try {
+      const res = await fetch('/api/confirm', { method: 'POST' })
+      if (!res.ok) return
+      const data = await res.json()
+      setCount(data.count)
+      setConfirmed(true)
+    } catch {
+      // Network error — silently ignore, button remains enabled
+    }
   }
 
   return (
