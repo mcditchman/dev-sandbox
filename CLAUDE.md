@@ -1,7 +1,7 @@
-# starter-template
+# dev-sandbox
 
 ## What this project does
-Reusable starter template for Next.js + Vercel + Supabase projects.
+Test bed for experimenting with the Next.js + Vercel + Supabase stack. Used for trying out new features, patterns, and integrations before applying them to production projects.
 
 ## Stack
 - Next.js (App Router) on Vercel
@@ -42,7 +42,7 @@ Reusable starter template for Next.js + Vercel + Supabase projects.
 - DB migrations must be run separately: `supabase db push`
 
 ## Domain Concepts
-[Replace with project-specific entities, business rules, etc.]
+This is a sandbox — no fixed domain. Use it freely for experiments.
 
 ## Current State
-[Replace with what's built and what's in progress]
+Freshly created from starter-template. Stack wired up (GitHub + Supabase + Vercel), no features yet.
