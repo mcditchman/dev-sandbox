@@ -44,6 +44,9 @@ supabase/.temp
 # vercel
 .vercel
 
+# brainstorm mockups
+.superpowers/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
